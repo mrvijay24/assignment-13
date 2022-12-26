@@ -1,0 +1,16 @@
+#unique or duplicate list
+l=[]
+n=int(input("enter the number of elements in the list"))
+for i in range(0,n):
+    k=int(input())
+    l.append(k)
+c=0
+for i in range (0,n):
+    for j in range(i+1,n):
+        if l[i]==l[j]:
+            print("duplicate")
+            c=1
+            break
+if c==0:
+    print("unique")
+  
